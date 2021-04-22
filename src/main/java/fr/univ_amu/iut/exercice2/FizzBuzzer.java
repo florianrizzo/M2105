@@ -14,7 +14,10 @@ public class FizzBuzzer {
 
     public String[] computeList(int i) {
         String [] list = new String [i];
-
+        for (int j = 1; j < i+1; ++j)
+        {
+            list[j-1] = computeString(j);
+        }
         return list;
     }
 }
