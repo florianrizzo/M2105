@@ -71,6 +71,13 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz", resultat);
     }
 
+    //@Disabled
+    @Test
+    public void test_computeString_Should_Return_FizzBuzz_when_30() {
+        String resultat = fizzBuzz.computeString(30);
+        assertEquals("FizzBuzz", resultat);
+    }
+
     @Disabled
     @Test
     public void test_computeList_Should_Return_a_sequence_of_5_elements_when_5() {
