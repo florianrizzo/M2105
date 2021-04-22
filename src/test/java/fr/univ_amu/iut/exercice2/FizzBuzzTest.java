@@ -29,19 +29,18 @@ public class FizzBuzzTest {
         assertEquals("Fizz", resultat);
     }
     
-    @Disabled
+    //@Disabled
     @Test
     public void test_computeString_Should_Return_4_when_4() {
         String resultat = fizzBuzz.computeString(4);
         assertEquals("4", resultat);
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void test_computeString_Should_Return_Buzz_when_5() {
-        String buzz = "Buzz";
         String resultat = fizzBuzz.computeString(5);
-        assertEquals("Buzz", buzz);
+        assertEquals("Buzz", resultat);
     }
 
     @Disabled
