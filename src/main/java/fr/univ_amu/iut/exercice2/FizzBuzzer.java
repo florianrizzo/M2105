@@ -13,7 +13,8 @@ public class FizzBuzzer {
     }
 
     public String[] computeList(int i) {
+        String [] list = new String [i];
 
-        throw new RuntimeException("Not yet implemented !");
+        return list;
     }
 }
