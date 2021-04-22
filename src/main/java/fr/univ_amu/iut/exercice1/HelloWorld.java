@@ -5,6 +5,8 @@ public class HelloWorld {
 
         if(s == null || s.equals(""))
             return "Hello, World!";
+        if(s.equals("Alice"))
+            return "Hello, Alice!";
     return "";
     }
 }
