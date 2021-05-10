@@ -20,7 +20,20 @@ public class Robot {
     }
 
     public void turnRight() {
-        throw new RuntimeException("Not yet implemented !");
+        switch(orientation){
+            case EAST:
+                orientation = Orientation.SOUTH;
+                break;
+            case SOUTH:
+                orientation = Orientation.WEST;
+                break;
+            case WEST:
+                orientation = Orientation.NORTH;
+                break;
+            case NORTH:
+                orientation = Orientation.EAST;
+                break;
+        }
     }
 
     public void turnLeft() {
