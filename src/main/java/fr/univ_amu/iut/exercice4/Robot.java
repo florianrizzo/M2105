@@ -57,7 +57,20 @@ public class Robot {
     }
 
     public void advance() {
-        throw new RuntimeException("Not yet implemented !");
+        switch (orientation){
+            case EAST:
+                gridPosition.setX(gridPosition.getX()+1);
+                break;
+            case SOUTH:
+                gridPosition.setY(gridPosition.getY()-1);
+                break;
+            case WEST:
+                gridPosition.setX(gridPosition.getX()-1);
+            break;
+            case NORTH:
+                gridPosition.setY(gridPosition.getY()+1);
+                break;
+        }
     }
 }
 

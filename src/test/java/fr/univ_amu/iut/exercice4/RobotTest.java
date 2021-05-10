@@ -120,7 +120,7 @@ public final class RobotTest {
         assertEquals(expectedOrientation, robot.getOrientation());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testAdvancingDoesNotChangeOrientation() {
         final Orientation initialOrientation = Orientation.NORTH;
@@ -129,7 +129,7 @@ public final class RobotTest {
         assertEquals(initialOrientation, robot.getOrientation());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testAdvancingWhenFacingNorthIncreasesYCoordinateByOne() {
         final Robot robot = new Robot(new GridPosition(0, 0), Orientation.NORTH);
@@ -138,7 +138,7 @@ public final class RobotTest {
         assertEquals(expectedGridPosition, robot.getGridPosition());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testAdvancingWhenFacingSouthDecreasesYCoordinateByOne() {
         final Robot robot = new Robot(new GridPosition(0, 0), Orientation.SOUTH);
@@ -147,7 +147,7 @@ public final class RobotTest {
         assertEquals(expectedGridPosition, robot.getGridPosition());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testAdvancingWhenFacingEastIncreasesXCoordinateByOne() {
         final Robot robot = new Robot(new GridPosition(0, 0), Orientation.EAST);
@@ -156,7 +156,7 @@ public final class RobotTest {
         assertEquals(expectedGridPosition, robot.getGridPosition());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testAdvancingWhenFacingWestDecreasesXCoordinateByOne() {
         final Robot robot = new Robot(new GridPosition(0, 0), Orientation.WEST);
