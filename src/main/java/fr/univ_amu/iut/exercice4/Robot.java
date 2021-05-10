@@ -1,6 +1,8 @@
 package fr.univ_amu.iut.exercice4;
 
 
+import java.util.HashMap;
+
 public class Robot {
     private GridPosition gridPosition;
     private Orientation orientation;
@@ -37,7 +39,21 @@ public class Robot {
     }
 
     public void turnLeft() {
-        throw new RuntimeException("Not yet implemented !");
+        switch (orientation){
+            case EAST:
+                orientation = Orientation.NORTH;
+                break;
+            case SOUTH:
+                orientation = Orientation.EAST;
+                break;
+            case WEST:
+                orientation = Orientation.SOUTH;
+                break;
+            case NORTH:
+                orientation = Orientation.WEST;
+                break;
+        }
+
     }
 
     public void advance() {
