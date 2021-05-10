@@ -47,4 +47,6 @@ public class GridPosition {
         result = 31 * result + y;
         return result;
     }
+
+
 }
